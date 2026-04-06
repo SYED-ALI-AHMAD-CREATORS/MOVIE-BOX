@@ -961,7 +961,22 @@
                 poster: "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop",
                 url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
                 description: "A group of friends venture into an uncharted forest, only to realize that the ancient trees hold a dark secret that won't let them leave."
-            },
+         movie_entry = {
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "language_options": ["English", "Hindi Dubbed"],
+    "genre": ["Crime", "Drama"],
+    "imdb_rating": 9.2,
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+}
+
+def display_movie_info(movie):
+    print(f"Title: {movie['title']} ({movie['year']})")
+    print(f"Audio: {', '.join(movie['language_options'])}")
+    print(f"Plot: {movie['description']}")
+
+display_movie_info(movie_entry)   },
             {
                 id: 4,
                 title: "Ocean's Edge",
